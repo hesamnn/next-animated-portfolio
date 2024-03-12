@@ -36,10 +36,10 @@ const Navbar = () =>{
     }
 
     const Links=[
-        {url: "/", title: "Home"},
-        {url: "/about", title: "About"},
-        {url: "/portfolio", title: "Portfolio"},
-        {url: "/contact", title: "Contact"},
+        {url: "/", title: "صفحه‌اصلی"},
+        {url: "/about", title: "درباره "},
+        {url: "/portfolio", title: "رزومه "},
+        {url: "/contact", title: "تماس"},
     ]
 
     const listVariants={
@@ -72,6 +72,7 @@ const Navbar = () =>{
             <div className="hidden md:flex gap-4 w-1/3">
                 {Links.map(link=>(
                     <NavLink link={link} key={link.title} />
+                    
                 ))}
             </div>
             
@@ -114,7 +115,7 @@ const Navbar = () =>{
             <motion.div variants={listVariants} initial="closed" animate="opened" className="top-0 left-0 absolute h-screen w-screen bg-black text-white flex flex-col justify-center items-center gap-8 text-4xl z-40">
                 {Links.map(link=>(
                     <motion.div variants={listItemVariants} key={link.title} className="">
-                    <Link  href={link.url} >{link.title}</Link>
+                    <Link  href={link.url} >{link.title} </Link>
 
                     </motion.div>
                 ))}
