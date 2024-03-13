@@ -29,7 +29,7 @@ const Homepage = () => {
           {/* DESC */}
           <p className="md:text-xl">
 
- طراح و برنامه نویس Backe-end و Front-end 
+ طراح و برنامه نویس Back-end ، Front-end 
 علاقه مند در حوزه هوش مصنوعی 
 ، طراحی مکانیک 
 و

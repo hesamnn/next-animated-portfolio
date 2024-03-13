@@ -6,7 +6,7 @@ import { useRef, useState } from "react";
 const ContactPage = () => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
-  const text = "Say Hello";
+  const text = "پیامی برای من";
 
   const form = useRef();
 
@@ -67,30 +67,30 @@ const ContactPage = () => {
           ref={form}
           className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
         >
-          <span>Dear Lama Dev,</span>
+          <span>پیام به حسام نیکخواه</span>
           <textarea
             rows={6}
             className="bg-transparent border-b-2 border-b-black outline-none resize-none"
             name="user_message"
           />
-          <span>My mail address is:</span>
+          <span>ایمیل شما</span>
           <input
             name="user_email"
             type="text"
             className="bg-transparent border-b-2 border-b-black outline-none"
           />
-          <span>Regards</span>
+          <span>با احترام</span>
           <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
-            Send
+            ارسال
           </button>
           {success && (
             <span className="text-green-600 font-semibold">
-              Your message has been sent successfully!
+              پیام شما با موفقیت ارسال شد!
             </span>
           )}
           {error && (
             <span className="text-red-600 font-semibold">
-              Something went wrong!
+          لطفا دوباره امتحان کنید
             </span>
           )}
         </form>

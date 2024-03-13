@@ -7,10 +7,10 @@ import NavLink from "./navLink";
 import { motion } from "framer-motion";
 
 const links = [
-  { url: "/", title: "Home" },
-  { url: "/about", title: "About" },
-  { url: "/portfolio", title: "Portfolio" },
-  { url: "/contact", title: "Contact" },
+  { url: "/", title: "خانه" },
+  { url: "/about", title: "درباره" },
+  { url: "/portfolio", title: "رزومه" },
+  { url: "/contact", title: "تماس" },
 ];
 
 const Navbar = () => {
@@ -82,31 +82,26 @@ const Navbar = () => {
           href="/"
           className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center"
         >
-          <span className="text-white mr-1">Lama</span>
-          <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center">
-            .dev
-          </span>
+          
+
+          <span className="text-white mr-1">HESAM NIKKHAH</span>
         </Link>
       </div>
       {/* SOCIAL */}
       <div className="hidden md:flex gap-4 w-1/3">
-        <Link href="/">
+        <Link href="https://github.com/hesamnn">
           <Image src="/github.png" alt="" width={24} height={24} />
         </Link>
-        <Link href="/">
-          <Image src="/dribbble.png" alt="" width={24} height={24} />
-        </Link>
-        <Link href="/">
+        <Link href="https://instagram.com/hesamnn">
           <Image src="/instagram.png" alt="" width={24} height={24} />
         </Link>
-        <Link href="/">
-          <Image src="/facebook.png" alt="" width={24} height={24} />
-        </Link>
-        <Link href="/">
-          <Image src="/pinterest.png" alt="" width={24} height={24} />
-        </Link>
-        <Link href="/">
+
+        <Link href="https://linkedin.com/hesamnn">
           <Image src="/linkedin.png" alt="" width={24} height={24} />
+        </Link>
+        
+        <Link href="https://t.me/hesamnn">
+          <Image src="/t.png" alt="" width={24} height={24} />
         </Link>
       </div>
       {/* RESPONSIVE MENU */}
@@ -143,7 +138,7 @@ const Navbar = () => {
             {links.map((link) => (
               <motion.div
                 variants={listItemVariants}
-                className=""
+                className="z-50"
                 key={link.title}
               >
                 <Link href={link.url}>{link.title}</Link>

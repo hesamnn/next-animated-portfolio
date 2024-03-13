@@ -1,18 +1,19 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
 import TransitionProvider from "@/components/transitionProvider";
+import localFont from 'next/font/local'
+ 
+const myFont = localFont({ src: './Yekan.woff2' })
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Lama Dev Portfolio App",
-  description: "The best animated portfolio page",
+  title: "حسام نیکخواه طراح و برنامه نویس",
+  description: "وبسایت شخصی حسام نیکخواه طراح و برنامه نویس",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" dir="rtl">
-      <body className={inter.className}>
+    <html lang="fa" dir="rtl">
+      <body className={myFont.className}>
         <TransitionProvider>{children}</TransitionProvider>
       </body>
     </html>
